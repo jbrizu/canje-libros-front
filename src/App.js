@@ -1,24 +1,28 @@
-import logo from './logo.svg';
-import './App.css';
+import { Routes, Route } from "react-router-dom";
+import FormularioLector from "./Componentes/FormularioLector";   
+import FormularioLibro from "./Componentes/FormularioLibro";
+import MainLectores from "./Componentes/MainLectores";
+import MainLibros from "./Componentes/MainLibros"; 
+import Navegacion from "./Componentes/Navegacion";
+import Carrusel  from "./Componentes/Carrusel";
+import Footer from "./Componentes/Footer"
+import { Container } from 'react-bootstrap'
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <Navegacion />
+        <Carrusel/>
+        <Container>
+        <Routes>
+          <Route path="/" element={<MainLibros />} />
+          <Route path="/FormularioLibro" element={<FormularioLibro />} />
+          <Route path="/MainLectores" element={<MainLectores />} />
+          <Route path="/Lectores" element={<FormularioLector />} />
+        </Routes>
+        </Container>
+        <Footer/>
+    </>
   );
 }
 
