@@ -35,7 +35,7 @@ const FormularioLibro = () => {
       })
       Swal.fire(
         '¡Muchas Gracias!',
-         '¡El libro ha sido catalógado con éxito!',
+         '¡El libro ha sido catalogado con éxito!',
          'success'      
      )
     };
@@ -55,7 +55,7 @@ const FormularioLibro = () => {
               />
             </Form.Group>
           ))}
-            <Button className="mt-3" onClick={handleClick}>Catálogar</Button>
+            <Button className="mt-3" onClick={handleClick}>Catalogar</Button>
       </div>
     );
   };

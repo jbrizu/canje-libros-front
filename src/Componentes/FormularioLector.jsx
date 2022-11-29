@@ -29,8 +29,8 @@ const FormularioLector = () => {
         correo: ""
      })
       Swal.fire({
-        title: 'Datos enviados Correctamente',
-        text: 'Gracias suscribirse.',
+        title: 'Datos enviados correctamente',
+        text: 'Gracias por suscribirse',
         icon: 'success',
         confirmButtonText: 'Aceptar'
       })
