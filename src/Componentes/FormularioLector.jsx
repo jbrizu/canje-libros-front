@@ -6,7 +6,7 @@ import Swal from 'sweetalert2';
 const FormularioLector = () => {
     
   
-    const URL = 'https://canje-libros-back.herokuapp.com/crearLector';
+    const URL = 'https://canje-libros-back.up.railway.app/crearLector';
 
     const [inputs, setInputs] = useState({
       nombre: "",

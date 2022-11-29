@@ -4,7 +4,7 @@ import { Table } from 'react-bootstrap';
 
 function MainLibros() {
 
-  const URL ='https://canje-libros-back.herokuapp.com/'
+  const URL ='https://canje-libros-back.up.railway.app/'
 
   const [libro, setLibros] = useState([]);
 
@@ -26,7 +26,7 @@ useEffect( () => {
       <Table className="table m-4">
         <thead className="m-4">
           <tr>
-            <th>ID</th> 
+            {/*<th>ID</th>*/} 
             <th>Título</th>
             <th>Autor</th>
             <th>Editorial</th>
@@ -38,7 +38,7 @@ useEffect( () => {
                {         
                 libro.map (item => (
                       <tr key={item._id}>
-                          <td>{item._id}</td>
+                          {/*<td>{item._id}</td>*/}
                           <td>{item.titulo}</td>
                           <td>{item.autor}</td>
                           <td>{item.editorial}</td>
