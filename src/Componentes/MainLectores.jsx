@@ -26,7 +26,7 @@ const MainLectores = () => {
           <Table className="table m-4">
           <thead className="m-4">
           <tr>
-            <th>ID</th> 
+            {/*<th>ID</th>*/} 
             <th>Nombre</th>
             <th>Apellido</th>
             <th>email</th>
@@ -36,7 +36,7 @@ const MainLectores = () => {
               {         
                 lector.map (item => (
                       <tr key={item._id}>
-                          <td>{item._id}</td>
+                          {/*<td>{item._id}</td>*/}
                           <td>{item.nombre}</td>
                           <td>{item.apellido}</td>
                           <td>{item.correo}</td>
