@@ -10,7 +10,7 @@ const FormularioLibro = () => {
     const URL = 'https://canje-libros-back.herokuapp.com/crearLibro';
 
     const [inputs, setInputs] = useState({
-      título: "",
+      titulo: "",
       autor: "",
       editorial: "",
       estado:"",
@@ -27,7 +27,7 @@ const FormularioLibro = () => {
     const handleClick = async () => {
       await axios.post(URL, inputs)
       setInputs({
-            título: "",
+            titulo: "",
             autor: "",
             editorial: "",
             estado:"",
